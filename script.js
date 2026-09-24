@@ -87,6 +87,8 @@
   setupCatalog();
   const assortmentFact = document.querySelector('.benefits b');
   if (assortmentFact) assortmentFact.textContent = products.length + ' востребованных типоразмеров';
+  const privacyText = document.querySelector('#privacy details p');
+  if (privacyText) privacyText.textContent = 'Оператор персональных данных: Общество с ограниченной ответственностью «ЛЕД ПРО ТРЕЙД» (ООО «ЛПТ»), ОГРН 1267800067820, ИНН 7811818424, КПП 781101001, 192012, г. Санкт-Петербург, вн. тер. г. муниципальный округ Обуховский, ул. Бабушкина, д. 131, к. 1, литера А, помещ. 3-Н. Имя, телефон, населённый пункт и параметры заказа используются для обработки запроса и обратной связи.';
   select.addEventListener('change', calculate);
   quantity.addEventListener('input', calculate);
   document.querySelectorAll('[data-step]').forEach(button => button.addEventListener('click', () => {
